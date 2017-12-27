@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/marquee_bg"
+        android:gravity="center"
+        android:text="温馨提示:  下拉刷新!"
+        android:textColor="@color/marquee_text"
+        android:textSize="10sp" />
+
+    <uk.co.imallan.jellyrefresh.JellyRefreshLayout
+        android:id="@+id/jelly_refresh_ins"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Loading..."
+        android:textColor="@color/colorAccent"
+        app:jellyColor="@color/colorPrimaryDark">
+
+        <com.nti56.scadashow.scadashow.compent.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_ins_seconds">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_ins_three">
+
+                        <Button
+                            android:id="@+id/ins_btn"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shape_ins"
+                            android:text="巡  更"
+                            android:textColor="@color/rippelColor"
+                            android:textSize="32dp" />
+                        
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ip_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/reds"
+                    android:text=""
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/ip_listview"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape"
+                    android:text="巡更完毕"
+                    android:textColor="@color/rippelColor"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bgDark" />
+
+                <ListView
+                    android:id="@+id/ip_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+        </com.nti56.scadashow.scadashow.compent.RippleView>
+
+    </uk.co.imallan.jellyrefresh.JellyRefreshLayout>
+
+</LinearLayout>

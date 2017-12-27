@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_submit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nti56.scadashow.scadashow.activity.SubmitActivity">
+
+    <com.nti56.scadashow.scadashow.compent.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <include layout="@layout/title"/>
+
+        <RadioGroup
+            android:visibility="gone"
+            android:id="@+id/radioGroupIDsub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/layout_titlebar"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/typeinfoGroupIDsub"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:text="故障处理"
+                android:textColor="@drawable/radiobutton_textcolor"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/typealarmGroupIDsub"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="未知故障"
+                android:textColor="@drawable/radiobutton_textcolor"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_below="@+id/radioGroupIDsub"
+            android:background="@color/bgDark"/>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frame_container1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line4"
+            >
+        </FrameLayout>
+
+
+
+    </com.nti56.scadashow.scadashow.compent.RippleView>
+
+</RelativeLayout>

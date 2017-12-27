@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\AndroidStudioWorkspaceDIY\\ScadaShow\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\dummy_tabs_three.xml",
+        "source": "E:\\AndroidStudioWorkspaceDIY\\ScadaShow\\bottom-bar\\src\\androidTest\\res\\xml\\dummy_tabs_three.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkspaceDIY\\ScadaShow\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\dummy_tabs_five.xml",
+        "source": "E:\\AndroidStudioWorkspaceDIY\\ScadaShow\\bottom-bar\\src\\androidTest\\res\\xml\\dummy_tabs_five.xml"
+    }
+]

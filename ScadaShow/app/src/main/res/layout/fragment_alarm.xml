@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.nti56.scadashow.scadashow.compent.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="97dp"
+            android:background="@drawable/finish_no"
+            android:text="报警"
+            android:textColor="@color/rippelColor"
+            android:visibility="gone" />
+    </com.nti56.scadashow.scadashow.compent.RippleView>
+
+
+    <TextView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/marquee_bg"
+        android:gravity="center"
+        android:text="温馨提示:  下拉刷新!"
+        android:textColor="@color/marquee_text"
+        android:textSize="10sp" />
+
+    <uk.co.imallan.jellyrefresh.JellyRefreshLayout
+        android:id="@+id/jelly_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/marquee"
+        android:text="Loading..."
+        android:textColor="@color/colorAccent"
+        app:jellyColor="@color/colorPrimaryDark">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </uk.co.imallan.jellyrefresh.JellyRefreshLayout>
+
+
+</RelativeLayout>

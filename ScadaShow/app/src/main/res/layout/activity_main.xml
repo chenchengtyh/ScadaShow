@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs_three" />
+
+    <com.nti56.scadashow.scadashow.compent.RippleView
+        android:visibility="gone"
+        android:layout_below="@+id/layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rippleView">
+
+        <TextView
+            android:id="@+id/messageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Hi mom!"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="bt1"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/rippelColor"
+            android:background="@drawable/shape"
+            android:layout_alignBaseline="@+id/messageView"
+            android:layout_alignBottom="@+id/messageView"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="bt2"
+            android:textColor="@color/rippelColor"
+            android:layout_above="@+id/bt1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape" />
+
+    </com.nti56.scadashow.scadashow.compent.RippleView>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/bottomBar">
+    </FrameLayout>
+
+    <include layout="@layout/title"
+        android:id="@+id/include"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/rippleView" />
+
+
+</RelativeLayout>

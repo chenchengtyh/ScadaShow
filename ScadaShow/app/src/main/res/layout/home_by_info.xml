@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title"/>
+
+    <com.nti56.scadashow.scadashow.compent.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview2_home"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/finish_no"
+            android:textColor="@color/rippelColor"
+            android:visibility="gone" />
+    </com.nti56.scadashow.scadashow.compent.RippleView>
+
+    <uk.co.imallan.jellyrefresh.JellyRefreshLayout
+        android:layout_below="@+id/layout_titlebar"
+        android:id="@+id/jelly_refresh_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Loading..."
+        android:layout_marginTop="52dp"
+        android:textColor="@color/colorAccent"
+        app:jellyColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/listview_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </uk.co.imallan.jellyrefresh.JellyRefreshLayout>
+
+
+</RelativeLayout>

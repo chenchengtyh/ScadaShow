@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_favorites"
+        icon="@drawable/rc_home"
+        title="资产" />
+    <tab
+        id="@+id/tab_nearby"
+        icon="@drawable/rc_alarm"
+        title="报警" />
+    <tab
+        id="@+id/tab_friends"
+        icon="@drawable/rc_order"
+        title="工单" />
+    <tab
+        id="@+id/tab_user"
+        icon="@drawable/rc_user"
+        title="用户" />
+</tabs>

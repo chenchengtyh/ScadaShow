@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_type"
+        icon="@drawable/rc_nulls"
+        />
+    <tab
+        id="@+id/tab_alarmss"
+        icon="@drawable/rc_null"
+         />
+</tabs>

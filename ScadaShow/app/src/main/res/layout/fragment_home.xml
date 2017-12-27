@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<com.moxun.tagcloudlib.view.TagCloudView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/tag_cloud"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--app:autoScrollMode="uniform"-->
+        <!--app:darkColor="@color/tagLight"-->
+        <!--app:lightColor="@color/colorPrimaryDark"-->
+        <!--app:radiusPercent="1"-->
+        <!--app:scrollSpeed="2" />-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_fund">
+    </ListView>
+
+
+</RelativeLayout>

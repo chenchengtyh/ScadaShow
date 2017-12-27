@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rim"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="  请描述故障内容"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/pics"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:text="拍照描述"
+        android:textColor="@color/rippelColor"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/gridviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pics"
+            android:gravity="center"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:layout_marginTop="10dp">
+
+        </GridView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

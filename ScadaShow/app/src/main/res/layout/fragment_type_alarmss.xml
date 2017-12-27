@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/marquee_bg"
+        android:gravity="center"
+        android:text="温馨提示:  下拉刷新!"
+        android:textColor="@color/marquee_text"
+        android:textSize="10sp" />
+
+    <uk.co.imallan.jellyrefresh.JellyRefreshLayout
+        android:id="@+id/jelly_refresh_type_alarmss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/marquee"
+        android:text="Loading..."
+        android:textColor="@color/colorAccent"
+        app:jellyColor="@color/colorPrimaryDark">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.nti56.scadashow.scadashow.compent.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/now_alarmss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="当天数据"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/now_runtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="当前运行时长(Min)"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/now_runtime_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/now_faulttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="当前故障时长(Min)"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/now_faulttime_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/now_faultnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="当前故障次数"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/now_faultnumber_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/now_alarmss"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="历史数据"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/his_runtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="历史运行时长(Min)"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/his_runtime_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/call" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/his_faulttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="历史故障时长(Min)"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/his_faulttime_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/call" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/his_faultnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="历史故障次数"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/his_faultnumber_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/call" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:background="@color/bgDark" />
+
+                    <LinearLayout
+                        android:id="@+id/his_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="历史产量"
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/his_product_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.3"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/blacks"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/call" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bgDark" />
+                </LinearLayout>
+
+            </com.nti56.scadashow.scadashow.compent.RippleView>
+        </ScrollView>
+    </uk.co.imallan.jellyrefresh.JellyRefreshLayout>
+
+</RelativeLayout>

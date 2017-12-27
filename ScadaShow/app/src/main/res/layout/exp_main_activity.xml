@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rippelColor"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/main_YYMM_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="----年-月"
+        android:textColor="@color/rippelColor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bgDark" />
+
+    <sun.bob.mcalendarview.views.WeekColumnView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bgDark" />
+
+    <sun.bob.mcalendarview.views.ExpCalendarView
+        android:id="@+id/calendar_exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/main_expandIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_arrow_up" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="12dp"
+        android:background="#a677bd"
+        android:onClick="TravelToClick"
+        android:text="travelto test"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

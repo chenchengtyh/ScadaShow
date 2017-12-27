@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarm_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_ddj" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:dither="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/warehourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成品库 -->"
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 堆垛机"
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stationno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备编号:6001"
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/errorcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="故障代码:6001"
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/errorstring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="故障描述:23456789..."
+                android:textColor="@color/bb_darkBackgroundColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_usernames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/usernames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行人: yangjiajia"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="07-28 16:17:16"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/bb_darkBackgroundColor"
+            android:textSize="14dp" />
+
+
+        <ImageView
+            android:id="@+id/img_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rc_alarm_nervers"/>
+
+    </LinearLayout>
+
+</LinearLayout>

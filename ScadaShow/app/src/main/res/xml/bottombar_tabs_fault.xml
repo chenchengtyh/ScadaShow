@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_fault"
+        icon="@drawable/ic_favorites"
+        title="故障处理" />
+    <tab
+        id="@+id/tab_unfault"
+        icon="@drawable/ic_nearby"
+        title="未知故障" />
+</tabs>
